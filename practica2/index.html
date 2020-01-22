@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vintage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+         *{
+            box-sizing: border-box;
+           margin: 0;
+             }
+        body{
+            background-color: #28c189;
+        }
+        .header{
+            background-color: #282828;
+            width: 100%;
+            height: 270px;
+            float: left;
+            }
+        .topnav {
+ background-color: #282828; 
+            position: absolute;
+            top:200px;
+           left: 470px;
+}
+
+.topnav a {
+    background-color: #282828; 
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header .search-container {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 16px;
+    position: absolute;
+    top:120px;
+    left:350px;
+    height: 31px;
+    overflow: hidden;
+}
+
+.header input[type=text] {
+   position: absolute;
+    top: 1px;
+    background-color: white;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+    color: black;
+}
+
+.header.search-container button {
+ border: none;
+ width: 30px;
+    height: 25px;
+}
+       
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+        .slider{
+            float:left;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        } 
+        .slider h2{
+            color: white;
+            font-size: 150px;
+            text-align: left;
+            position: absolute;
+            top:750px;
+            left: 75px;
+            
+        }
+        .slider ul{
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: cambio 20s infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+        
+        .slider li{
+            width: 100%;
+            list-style: none;
+        }
+        .slider img{
+            width: 100%;
+        }
+        
+        @keyframes cambio{
+            0% { margin-left: 0;}
+             20% { margin-left: 0;}
+            
+             25% { margin-left: -100%;}
+           45% { margin-left: -100%;} 
+            
+           50% { margin-left: -200%;} 
+            70% { margin-left: -200%;} 
+            
+            75% { margin-left: -300%;} 
+            100% { margin-left: -300%;} 
+        }
+        .colecciones{
+            width: 100%;
+            float:left;
+        }
+        .img1{
+            display: flex;
+           width: 100%;
+            height: auto;
+            padding-top: 70px;
+        }
+        .colecciones img{
+            display: flex;
+           width: 100%;
+            height: auto;
+            opacity: 1;
+            }
+        
+        .colecciones h3{
+            font-size: 50px;
+            position: absolute;
+            left: 386px;
+          
+        }
+  .colecciones  imag:hover{
+            opacity: 0.5 ;
+            
+        }
+        .descuento{
+            width: 100%;
+            float:left;
+            
+        }
+         .descuento h4{
+            font-size: 50px;
+            position: absolute;
+            left: 476px;
+          
+        }
+        .campera{
+            float:left;
+            width: 30%;
+            position: absolute;
+            top: 2885px;
+            right: 900px;
+        }
+        .campera img{
+            width: 100%;
+            height: auto;
+            padding-top: 80px;
+            padding-left: 23px;
+        }
+       .campera  p{
+            font-size: 26px;
+            text-align: center;
+            padding-bottom: 5px;
+           padding-left: 140px;
+            }
+         p{
+            font-size: 26px;
+            text-align: center;
+            padding-bottom: 5px;
+            }
+        .antes{
+            font-size: 26px;
+            text-align: center;
+            padding-top: 5px;
+            text-decoration: line-through;
+        }
+        
+        .camperatri{
+            float:right;
+            width: 30%;
+            position: absolute;
+            top: 2885px;
+            left: 430px;
+        }
+        .camperatri img{
+            width: 100%;
+            height: auto;
+            padding-top: 80px;
+            padding-left: 23px;
+        }
+         .parka{
+            float:right;
+            width: 30%;
+            position: absolute;
+            top: 2885px;
+            left: 825px;
+        }
+        .parka img{
+            width: 100%;
+            height: auto;
+            padding-top: 80px;
+            padding-left: 23px;
+        }
+        .art1{
+            width: 30%;
+            height: auto;
+            padding-top: 80px;
+            padding-left: 23px;
+            margin-left: 50px;
+        }
+        
+        .descuento button{
+            position: absolute;
+            top: 3600px;
+            left: 570px;
+            height: 50px;
+            width: 100px;
+            font-size: 16px;
+             background-color: #282828;
+            color: white;
+            border: none;
+        }
+        .footer{
+            float: right;
+            width: 100%;
+            height: 600px;
+            background-color: #282828;
+            position: absolute;
+            top: 3700px;
+            
+            
+        }
+        .formulario{
+            float: left;
+            width: 30%;
+            margin:auto;
+            position: absolute;
+            top:80px;
+            left:330px;
+        }
+        .formulario h5{
+            width: 100%;
+            font-size: 26px;
+            color: white;
+            position: absolute;
+            left: 110px;
+            top:-40px;
+            text-align: center;
+            
+        }
+        .caja1{
+            width: 250px;
+            height:40px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+            position: absolute;
+           top: 28px;
+        }
+       .caja2 {
+            width: 250px;
+            height:40px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+            position: absolute;
+           top: 28px;
+            left: 289px;
+           
+        }
+        .caja3 {
+            width: 250px;
+            height:40px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px; 
+            position: absolute;
+           top: 98px;
+        }
+        .caja4 {
+            width: 250px;
+            height:40px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+            position: absolute;
+           top: 98px;
+            left: 289px;
+        }
+        
+        .registrarse{ 
+        position: absolute;
+            top: 200px;
+            left: 240px;
+            height: 50px;
+            width: 100px;
+            font-size: 16px;
+             background-color:  #28c189;
+            color: black;
+            border: none;
+        }
+        .detalle{ 
+            width: 90%;
+                height: 2px;
+            background-color: gainsboro;
+            position: absolute;
+            top: 370px;
+            left: 50px;
+        }
+  a{
+            text-decoration: none;
+          color: white;
+        }
+        
+   .titulo1 {   
+       text-decoration:underline;
+          color: white;
+        } 
+        .info { 
+        position:absolute;
+            top:420px;
+            left: 250px;
+        }  
+        .cli { 
+        position:absolute;
+            top:420px;
+            left: 550px;
+        }  
+        .con { 
+        position:absolute;
+            top:420px;
+           right: 250px;
+        }  
+        .con img {
+            width: 70%;
+                height: auto;
+            } 
+        .derechos{
+            color: white;
+            font-size: 12px;
+            position: absolute;
+            top: 570px;
+            left: 550px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="imagenes/logo.png">
+            <div class="search-container">
+    <form action="/action_page.php"><button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Busca" name="search">
+       </form>
+  </div>
+        <div class="topnav">
+  <a href="#">home</a>
+  <a href="#">hombres</a>
+            <a href="#">mujeres</a>
+            <a href="#">niños</a>
+            <a href="#">beauty</a>
+  
+</div>
+        </div>
+        <div class="slider">
+        <ul>
+            <li><a href="#"><img src="imagenes/nueva%20coleccion.jpg"></a></li>
+            <li><a href="#"><img src="imagenes/novedades%20ropa%20vintage%20mujer.jpg"></a></li>
+            <li><a href="#"><img src="imagenes/novedades%20ropa%20vintage%20hombre.jpg"></a></li>
+            <li><a href="#"><img src="imagenes/novedades%20ropa%20vintage%20ni%C3%B1os.jpg"></a></li>
+            
+            </ul>
+            <h2>NUEVA COLECCIÓN</h2>
+        </div>
+        
+       
+        <div class="colecciones">
+          <h3>Colecciones destacadas</h3>
+            <a href="#"> <img src="imagenes/coleccion%20de%20mujeres.jpg" class="img1"></a>
+            <a href="#"> <img src="imagenes/coleccion%20de%20hombres.jpg"></a>
+            <a href="#"> <img src="imagenes/coleccion%20de%20ni;os.jpg"></a>
+            <a href="#"><img src="imagenes/coleccion%20de%20beauty.jpg"></a>
+        </div>
+        <div class="descuento">
+            <h4>En descuento</h4>
+            <div class="campera">
+                <a href="#"><img src="imagenes/articulo%201%20para%20wed.jpg" class="art1"></a>
+            <p>campera</p>
+             <p class="antes">$2500</p>
+            <p>$1500</p>
+            </div>
+            <div class="camperatri">
+                <a href="#"><img src="imagenes/ropa%20vintage%20ni%C3%B1o.jpg"></a>
+            <p>campera tricolor</p>
+             <p class="antes">$3000</p>
+            <p>$2500</p>
+            </div>
+            <div class="parka">
+                <a href="#"><img src="imagenes/parka%20mujer.jpg"></a>
+            <p>Parka gris</p>
+             <p class="antes">$1800</p>
+            <p>$1200</p>
+            </div>
+            <button>ver mas</button>
+        </div>
+        <div class="footer">
+            <div class="formulario">
+                <h5>Registrate para mas promociones!</h5>
+                <form>
+                    <input type="text" name="nombre" placeholder="nombre" class="caja1">
+                    <input type="mail" name="mail" placeholder="mail" class="caja2">
+                    <input type="text" name="contraseña" placeholder="contraseña" class="caja3">
+                    <input type="text" name="confirmarcontraseña" placeholder="confirmar contraseña" class="caja4">
+                    <button class="registrarse">Registrarse</button>
+                </form>
+            </div>
+            <div class="detalle"></div>
+         <div class="infoclicon"></div>
+            <ul class="info">
+            <li class="titulo1" style="list-style:none;"><a href="#">Informacion</a></li>
+            <li style="list-style:none;"><a href="#">Quienes somos</a></li>
+                <li style="list-style:none;"><a href="#">Envios y entregas</a></li>
+                <li style="list-style:none;"><a href="#">Metodos de pago</a></li>
+                <li style="list-style:none;"><a href="#">Tabla de talles</a></li>
+                <li style="list-style:none;"><a href="#">Terminos y condiciones</a></li>
+            </ul>
+            <ul class="cli">
+            <li class="titulo1"style="list-style:none;" ><a href="#">Cliente</a></li>
+            <li style="list-style:none;" ><a href="#">Mi cuenta</a></li>
+                <li style="list-style:none;"><a href="#">Mis pedidos</a></li>
+                <li style="list-style:none;"><a href="#">Mis favoritos</a></li>
+                <li style="list-style:none;"><a href="#">Atencion al cliente</a></li>
+                </ul>
+            <ul class="con">
+            <li class="titulo1"style="list-style:none;" ><a href="#">Contactos</a></li>
+            <li style="list-style:none;"><a href="#"><img src="imagenes/insta.png"></a></li>
+                <li style="list-style:none;" ><a href="#"><img src="imagenes/Sin%20t%C3%ADtulo-4.png"></a></li>
+                <li style="list-style:none;" ><a href="#"><img src="imagenes/Sin%20t%C3%ADtulo-5.png"></a></li>
+               
+            </ul>
+            <p class="derechos">todos los derechos reservados</p>
+            
+        </div>
+    </body>
+</html>
